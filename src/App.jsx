@@ -8,8 +8,8 @@ import Homesection from './pages/Home';
 
 import ReviewSlider from './pages/Review';
 import Footer from './pages/footer';
-import FloatingIcons from './Pages/floatingicons';
-import IndividualIntervalsExample from './Pages/carousal';
+import FloatingIcons from './pages/floatingicons';
+import IndividualIntervalsExample from './pages/carousal';
 import WhatWeDo from './pages/whatwedo';
 import Gallery from './pages/Gallery'
 
