@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import './Pages/Style.css';
+import './pages/css/Style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbarsection from './pages/Navbar';
 import CourseCards from './pages/Card';
