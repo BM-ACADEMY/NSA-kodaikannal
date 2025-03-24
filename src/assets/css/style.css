@@ -1,0 +1,11 @@
+.card {
+  border: 2px solid #000; /* Black outline */
+  border-radius: 10px; /* Optional: rounded corners */
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%; /* Ensures the image covers the card */
+  height: 300px;
+  object-fit: cover; /* Ensures the image fits within the box without stretching */
+}
