@@ -7,11 +7,11 @@ import CourseCards from './pages/Card';
 import Homesection from './pages/Home';
 
 import ReviewSlider from './pages/Review';
-import Footer from './Pages/footer';
+import Footer from './pages/footer';
 import FloatingIcons from './Pages/floatingicons';
 import IndividualIntervalsExample from './Pages/carousal';
 import WhatWeDo from './pages/whatwedo';
-import Gallery from './pages/Gallery.jsx'
+import Gallery from './pages/Gallery'
 
 
 export default function App() {
