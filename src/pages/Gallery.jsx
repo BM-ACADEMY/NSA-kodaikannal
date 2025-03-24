@@ -38,7 +38,7 @@ export default function ServiceTabs() {
 
   return (
     <div className="container-fluid" id="Gallery">
-      <div className="row justify-content-center">
+      <div className="row justify-content-center pt-4">
         <ul className="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
           {[
             { id: "design-tab", target: "design-tab-pane", label: "Our Villas" },

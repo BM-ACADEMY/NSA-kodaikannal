@@ -44,7 +44,7 @@ const Footer = () => {
             {/* Email */}
             <p className="d-flex align-items-center">
               <FaEnvelope className="me-2 flex-shrink-0" />
-              <a href="mailto:Nsaholidays@gmail.com" className="text-white ps-2 text-decoration-none">Nsaholidays@gmail.com</a>
+              <a href="mailto:Nsaholidays@gmail.com" className="text-white ps-2 text-decoration-none">nsaholidays@gmail.com</a>
             </p>
 
             {/* Address */}
