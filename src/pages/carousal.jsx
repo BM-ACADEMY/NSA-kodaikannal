@@ -3,7 +3,7 @@ import { Carousel } from "react-bootstrap";
 import school from "../assets/carousel/room1.jpg";
 import school2 from "../assets/carousel/room2.jpg";
 import school3 from "../assets/carousel/room3.jpg";
-import "./Style.css";
+import "../pages/css/Style.css";
 
 const CarouselComponent = () => {
   return (

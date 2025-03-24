@@ -4,8 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { FaBars, FaTimes } from "react-icons/fa"; // Import icons
 import logo from "../assets/logo.png"; 
-import "./Style.css";
-
+import "../pages/css/Style.css";
 function Navbarsection() {
   const [expanded, setExpanded] = useState(false);
 

@@ -3,7 +3,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import background from "../assets/whoweare.jpg"; // Import the image
-import "./Style.css";
+import "../pages/css/Style.css";
 
 const Homesection = () => {
   useEffect(() => {

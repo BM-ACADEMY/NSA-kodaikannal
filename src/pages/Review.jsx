@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./Style.css"; 
+import "../pages/css/Style.css";
 
 const reviews = [
   {

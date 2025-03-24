@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import './Style.css';
+import "../pages/css/Style.css";
 
 export default function CourseCards() {
   useEffect(() => {
