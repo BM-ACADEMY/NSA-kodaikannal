@@ -3,8 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 :root {
-  --font1: "Atkinson Hyperlegible Next", serif;
-  --font2: "Merriweather", serif;
+  --font1: "Poppins", serif;
+  --font2: "Poppins", serif;
   --font3: "Poppins", sans-serif;
 }
 
