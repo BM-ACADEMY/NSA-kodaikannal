@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import background from "../assets/whoweare.jpg"; // Import the image
+import background from "../assets/whoweare.jpeg"; // Import the image
 import "../pages/css/Style.css";
 
 const Homesection = () => {
