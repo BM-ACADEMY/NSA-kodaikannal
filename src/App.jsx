@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbarsection from './pages/Navbar';
 import CourseCards from './pages/Card';
 import Homesection from './pages/Home';
-
+import WhatsAppButton from './pages/whatsappButton';
 import ReviewSlider from './pages/Review';
 import Footer from './pages/footer';
 import FloatingIcons from './pages/floatingicons';
@@ -30,7 +30,7 @@ export default function App() {
       <Gallery />
       <ReviewSlider />
       <Footer />
-      
+      <WhatsAppButton/>
     </div>
   );
 }
