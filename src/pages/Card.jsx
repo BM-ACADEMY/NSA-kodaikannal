@@ -127,7 +127,7 @@ export default function CourseCards() {
                         {/* First Card */}
                         <div className="card shadow-lg" style={cardStyle}>
                           <div className="card-body text-center p-3">
-                            <h5 className="card-title font-weight-bold text-uppercase mb-3">
+                            <h5 className="card-title font-weight-bold text-uppercase mb-3" style={{color:"red"}}>
                               {courses[index].title}
                             </h5>
                             <ul className="list-unstyled text-start">
@@ -144,7 +144,7 @@ export default function CourseCards() {
                         {courses[index + 1] && (
                           <div className="card shadow-lg" style={cardStyle}>
                             <div className="card-body text-center p-3">
-                              <h5 className="card-title font-weight-bold text-uppercase mb-3">
+                              <h5 className="card-title font-weight-bold text-uppercase mb-3"  style={{color:"red"}}>
                                 {courses[index + 1].title}
                               </h5>
                               <ul className="list-unstyled text-start">
