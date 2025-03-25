@@ -36,9 +36,11 @@ const Homesection = () => {
               src={background} // Use the imported image
               alt="Academy Background"
               fluid
+            
               style={{
                 boxShadow: "10px 10px 20px rgba(0, 0, 0, 0.3)",
                 borderRadius: "10px",
+                height:"400px"
               }}
             />
           </Col>
