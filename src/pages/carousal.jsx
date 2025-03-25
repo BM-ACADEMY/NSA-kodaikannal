@@ -1,8 +1,12 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import school from "../assets/carousel/room1.jpg";
-import school2 from "../assets/carousel/room2.jpg";
-import school3 from "../assets/carousel/room3.jpg";
+import s1 from "../assets/carousel/s1.jpg";
+import s2 from "../assets/carousel/s2.jpg";
+import s6 from "../assets/carousel/s6.jpg";
+
+import s4 from "../assets/carousel/s4.jpg";
+
+
 import "../pages/css/Style.css";
 
 const CarouselComponent = () => {
@@ -12,12 +16,12 @@ const CarouselComponent = () => {
         <Carousel.Item>
           <img
             className="carousel-img"
-            src={school} // Use the imported image
+            src={s1} // Use the imported image
             alt="First slide"
           />
           <Carousel.Caption>
             <h3 className="text-center jk text-uppercase fw-bold">
-              Welcome to NSA Holidays-Kodaikanal
+              Welcome to NSA Holidays
             </h3>
           </Carousel.Caption>
         </Carousel.Item>
@@ -25,7 +29,7 @@ const CarouselComponent = () => {
         <Carousel.Item>
           <img
             className="carousel-img"
-            src={school2} // Use the imported image
+            src={s2} // Use the imported image
             alt="Second slide"
           />
           <Carousel.Caption>
@@ -35,10 +39,12 @@ const CarouselComponent = () => {
           </Carousel.Caption>
         </Carousel.Item>
 
+    
+      
         <Carousel.Item>
           <img
             className="carousel-img"
-            src={school3} // Use the imported image
+            src={s6} // Use the imported image
             alt="Third slide"
           />
           <Carousel.Caption>
@@ -47,6 +53,22 @@ const CarouselComponent = () => {
             </h3>
           </Carousel.Caption>
         </Carousel.Item>
+      
+        <Carousel.Item>
+          <img
+            className="carousel-img"
+            src={s4} // Use the imported image
+            alt="Third slide"
+          />
+          <Carousel.Caption>
+            <h3 className="text-center jk text-uppercase fw-bold">
+              
+            </h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+     
+      
+
       </Carousel>
     </div>
   );

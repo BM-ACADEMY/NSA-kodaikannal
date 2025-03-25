@@ -7,7 +7,7 @@ import whatsappIcon  from "../assets/whatsapp.png"; // Import Facebook icon
 
 const Footer = () => {
   return (
-    <footer className="footer-section py-4" id="contact" style={{ backgroundColor: "#00345b" }}>
+    <footer className="footer-section py-4" id="contact" style={{ backgroundColor: "black" }}>
       <Container>
         <Row className="gap-4 gap-md-0">
           <Col md={3} className="text-start text-white d-flex flex-column align-items-start mb-4 mb-md-0">
@@ -20,7 +20,7 @@ const Footer = () => {
           </Col>
 
           <Col md={3} className="text-start text-white mb-4 mb-md-0">
-            <h5>Useful Links</h5>
+            <h5 style={{color:"#ffdf1a"}}>Useful Links</h5>
             <ul className="list-unstyled d-flex flex-column gap-3 align-items-start">
               <li><a href="#home" className="text-white text-decoration-none">Home</a></li>
               <li><a href="#Whoweare" className="text-white text-decoration-none">Who We Are</a></li>
@@ -32,7 +32,7 @@ const Footer = () => {
           </Col>
 
           <Col md={3} className="text-start text-white">
-            <h5>Contact Us</h5>
+            <h5  style={{color:"#ffdf1a"}}>Contact Us</h5>
 
             {/* Phone */}
             <p className="d-flex align-items-center">
@@ -55,7 +55,7 @@ const Footer = () => {
           </Col>
 
           <Col md={3} className="text-start text-white">
-            <h5>Follow Us</h5>
+            <h5  style={{color:"#ffdf1a"}}>Follow Us</h5>
             <div className="social-icons d-flex gap-3">
               <a href="https://www.instagram.com/nsa_holidays_kodaikanal/" target="_blank" className="text-white" rel="noreferrer">
                 <img src={instagramIcon} alt="Instagram" width="30" height="30" />

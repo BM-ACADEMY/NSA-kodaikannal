@@ -18,7 +18,7 @@ html {
 }
 
 .navbar-custom {
-  background-color: white !important;
+  background-color: black !important;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
 }
@@ -40,7 +40,7 @@ html {
 }
 
 .navbar-custom .nav-item {
-  color: #dd020d  !important;
+  color: #fed822  !important;
   font-weight: 500;
   transition: color 0.3s ease-in-out;
 }
@@ -121,6 +121,7 @@ html {
 .Homesection1 {
   padding: 20px;
   background-color: rgba(206, 206, 206, 0.3);
+  Color: Red;
 }
 
 .Homesection1 h2 {
@@ -140,7 +141,7 @@ html {
 }
 
 .Homesection1 p strong {
-  color: #0071a7;
+  color: red;
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
@@ -229,25 +230,26 @@ html {
 }
 
 .course-card {
-  border-radius: 10px !important;
+  border: #dd020d 2px !important;
+  border-radius: 10px red !important;
   transition: all 0.3s ease-in-out !important;
 }
 
 .hindi-bg {
-  background-color: #efd9be !important;
+  background-color: white !important;
 }
 
 .skills-bg {
-  background-color: #c8ffb6 !important;
+  background-color: white !important;
 }
 
 .online-bg {
-  background-color: #bbcef4 !important;
+  background-color:white !important;
 }
 
 .course-card:hover {
   transform: translateY(-5px) !important;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0px 10px 20px red !important;
   filter: brightness(1.1) !important;
 }
 
@@ -257,7 +259,7 @@ html {
 }
 
 .course-card .btn-dark {
-  background-color: #171818 !important;
+  background-color: red !important;
   border: none !important;
 }
 
@@ -285,7 +287,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: red;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -311,7 +313,7 @@ html {
 
 .card-component .course-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px red;
 }
 
 .card-component .card-description {
@@ -321,7 +323,7 @@ html {
   width: 100%;
   text-align: center;
   padding: 15px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color:red;
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
@@ -376,7 +378,7 @@ html {
 
 .quote-icon {
   font-size: 24px;
-  color: #00345b;
+  color: #ffdf1a;
 }
 
 .top-left {
@@ -560,10 +562,10 @@ html {
 }
 
 .jk {
-  color: white !important;
+  color:#f3d426 !important;
   font-size: 50px;
   font-family: var(--font3);
-  text-shadow: 0 0 10px #d3e7ec, 0 0 20px #00345b, 0 0 30px #00345b;
+  text-shadow: 0 0 10px red, 0 0 20px rgb(243, 75, 75), 0 0 30px #00345b;
 }
 
 @media screen and (max-width: 1200px) {
@@ -604,6 +606,9 @@ html {
 .whatwedo h2 {
   font-family: var(--font3);
   font-weight: 600;
+  color: red;
+
+ 
 }
 
 .whatwedo p {
@@ -633,7 +638,7 @@ html {
 }
 
 .whatwedo strong {
-  color: #0e4d7e;
+  color: red !important;
 }
 
 .who-we-serve-section {

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../assets/css/style.css";
 
-
 // Import images from src/assets/
 import i1 from "../assets/1.jpeg";
 import i2 from "../assets/2.jpeg";
@@ -40,7 +39,7 @@ export default function ServiceTabs() {
     <div className="container-fluid" id="Gallery">
       <div className="row justify-content-center pt-4">
         <ul className="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
-          {[
+          {[ 
             { id: "design-tab", target: "design-tab-pane", label: "Our Villas" },
             { id: "marketing-tab", target: "marketing-tab-pane", label: "Tent Stay A Frame" },
             { id: "finance-tab", target: "finance-tab-pane", label: "Home Stay" },
@@ -56,6 +55,7 @@ export default function ServiceTabs() {
                 aria-controls={tab.target}
                 aria-selected={activeTab === tab.id}
                 onClick={() => handleTabClick(tab.id)}
+                style={{ color: "red" }}
               >
                 {tab.label}
               </button>
@@ -63,7 +63,7 @@ export default function ServiceTabs() {
           ))}
         </ul>
       </div>
-<br />
+      <br />
       {/* Tab Content */}
       <div className="tab-content mt-2" id="myTabContent">
         {[
@@ -98,10 +98,19 @@ export default function ServiceTabs() {
                 </div>
               ))}
             </div>
-
           </div>
         ))}
       </div>
+      <style>
+        {`
+          .nav-link {
+            color: red !important;
+          }
+          .nav-link:hover {
+            color: #ff6666 !important;
+          }
+        `}
+      </style>
     </div>
   );
 }

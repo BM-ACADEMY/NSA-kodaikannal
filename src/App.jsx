@@ -30,7 +30,7 @@ export default function App() {
       <Gallery />
       <ReviewSlider />
       <Footer />
-      <FloatingIcons />
+      
     </div>
   );
 }

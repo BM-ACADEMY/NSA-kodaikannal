@@ -1,126 +1,219 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import "../pages/css/Style.css";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 export default function CourseCards() {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  // Function to open WhatsApp link
-  const openWhatsApp = () => {
-    window.open("https://wa.me/917397180444", "_blank");
-  };
+  const courses = [
+    {
+      title: "Trekking Tour - Kodaikanal",
+      places: [
+        "La Saleth Church",
+        "Liril Falls",
+        "Chocolates & Spices Shopping",
+        "Vattakanal Falls",
+        "Mountain Beauty",
+        "Dolphin Nose",
+        "Echo Rock",
+        "Bryant Park",
+        "Kodaikanal Lake",
+      ],
+    },
+    {
+      title: "Village Tour - Kodaikanal",
+      places: [
+        "Palani Hill View",
+        "Mahalakshmi Temple",
+        "Poombarai Village View",
+        "Sai Baba Temple",
+        "Kulandhai Velappar Temple",
+        "Sheep & Rabbit Farm",
+        "Mannavanur Lake View",
+        "Mannavanur Lake",
+        "Upper Lake View",
+        "Bryant Park",
+        "Kodaikanal Lake",
+      ],
+    },
+    {
+      title: "Wild Ways Tour - Kodaikanal",
+      places: [
+        "La Saleth Church",
+        "Silent Valley View",
+        "Caps Fly Valley",
+        "Fire Watching Tower",
+        "Berijam Lake View",
+        "Memory Loss Forest View",
+        "Berijam Lake",
+        "Bryant Park",
+        "Kodaikanal Lake",
+      ],
+    },
+    {
+      title: "Valley Tour - Kodaikanal",
+      places: [
+        "Coakers Walk",
+        "La Saleth Church",
+        "Liril Falls",
+        "Chocolates & Spices Shopping",
+        "Green Valley View",
+        "Golf Course",
+        "Pillar Rocks",
+        "Guna Cave",
+        "Pine Forest",
+        "Moir Point",
+        "Upper Lake View",
+        "Bryant Park",
+        "Kodaikanal Lake",
+      ],
+    },
+    {
+      title: "Kookal Tour",
+      places: [
+        "Palani View",
+        "Mahalakshmi Temple",
+        "Poombarai Village View",
+        "Kookal Lake",
+        "Kookal Private Waterfalls",
+        "Kookal Mountain Valley View",
+        "Kodaikanal Lake",
+      ],
+    },
+  ];
 
   return (
-    <div style={{ backgroundColor: '#00345b' }}>
-      <div className="container pt-3 pb-5 coursecard" id="Services">
-        <h2 className="text-center text-white coursecard-head mb-5 text-uppercase" data-aos="zoom-in" style={{ fontWeight: '600' }}>
-          Our Services
+    <div style={{ backgroundColor: "#f0f0f0", padding: "50px 0" }}>
+      <div className="container coursecard" id="Services">
+        <h2
+          className="text-center coursecard-head mb-1 text-uppercase"
+          data-aos="zoom-in"
+          style={{ fontWeight: "600", color:"red" }}
+        >
+          Tour Packages
         </h2>
 
-        <div className="row row-cols-1 row-cols-md-4 g-4 justify-content-center align-items-stretch pt-4">
+        {/* Carousel Wrapper */}
+        <div className="position-relative">
+          {/* Left Navigation Button */}
+          <button
+            className="carousel-control-prev custom-nav"
+            type="button"
+            data-bs-target="#courseCarousel"
+            data-bs-slide="prev"
+          >
+            <span className="carousel-control-prev-icon"></span>
+          </button>
 
-          {/* Trekking Tour - Kodaikanal Card */}
-          <div className="col d-flex" data-aos="zoom-in">
-            <div className="card h-100 course-card hindi-bg shadow-lg">
-              <div className="card-body d-flex flex-column justify-content-center align-items-center text-center p-4">
-                <h5 className="card-title font-weight-bold text-uppercase mb-3" style={{ fontWeight: '800' }}>
-                  Trekking Tour - Kodaikanal
-                </h5>
-                <ul className="list-unstyled text-start">
-                  <li>➤ La Saleth Church</li>
-                  <li>➤  Liril Falls</li>
-                  <li>➤  Chocolates & Spices Shopping</li>
-                  <li>➤  Vattakanal Falls</li>
-                  <li>➤  Mountain Beauty</li>
-                  <li>➤  Dolphin Nose</li>
-                  <li>➤  Echo Rock</li>
-                  <li>➤  Bryant Park</li>
-                  <li>➤  Kodaikanal Lake</li>
-                </ul>
-               
-              </div>
+          {/* Bootstrap Carousel */}
+          <div
+            id="courseCarousel"
+            className="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div className="carousel-inner">
+              {courses.map((_, index) => {
+                if (index % 2 === 0) {
+                  return (
+                    <div
+                      key={index}
+                      className={`carousel-item ${index === 0 ? "active" : ""}`}
+                    >
+                      <div className="d-flex justify-content-center gap-3">
+                        {/* First Card */}
+                        <div className="card shadow-lg" style={cardStyle}>
+                          <div className="card-body text-center p-3">
+                            <h5 className="card-title font-weight-bold text-uppercase mb-3">
+                              {courses[index].title}
+                            </h5>
+                            <ul className="list-unstyled text-start">
+                              {courses[index].places.map((place, idx) => (
+                                <li key={idx} style={listItemStyle}>
+                                  <span style={arrowStyle}>➤</span> {place}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+
+                        {/* Second Card (if exists) */}
+                        {courses[index + 1] && (
+                          <div className="card shadow-lg" style={cardStyle}>
+                            <div className="card-body text-center p-3">
+                              <h5 className="card-title font-weight-bold text-uppercase mb-3">
+                                {courses[index + 1].title}
+                              </h5>
+                              <ul className="list-unstyled text-start">
+                                {courses[index + 1].places.map((place, idx) => (
+                                  <li key={idx} style={listItemStyle}>
+                                    <span style={arrowStyle}>➤</span> {place}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  );
+                }
+                return null;
+              })}
             </div>
           </div>
 
-          {/* Village Tour - Kodaikanal Card */}
-          <div className="col d-flex" data-aos="zoom-in">
-            <div className="card h-100 course-card skills-bg shadow-lg">
-              <div className="card-body d-flex flex-column justify-content-center align-items-center text-center p-4">
-                <h5 className="card-title font-weight-bold text-uppercase mb-3" style={{ fontWeight: '800' }}>
-                  Village Tour - Kodaikanal
-                </h5>
-                <ul className="list-unstyled text-start">
-                  <li>➤  Palani Hill View</li>
-                  <li>➤  Mahalakshmi Temple</li>
-                  <li>➤  Poombarai Village View</li>
-                  <li>➤  Sai Baba Temple</li>
-                  <li>➤  Kulandhai Velappar Temple</li>
-                  <li>➤  Sheep & Rabbit Farm</li>
-                  <li>➤  Mannavanur Lake View</li>
-                  <li>➤  Mannavanur Lake</li>
-                  <li>➤  Upper Lake View</li>
-                  <li>➤  Bryant Park</li>
-                  <li>➤  Kodaikanal Lake</li>
-                </ul>
-                
-              </div>
-            </div>
-          </div>
-
-          {/* Wild Ways Tour - Kodaikanal Card */}
-          <div className="col d-flex" data-aos="zoom-in">
-            <div className="card h-100 course-card online-bg shadow-lg">
-              <div className="card-body d-flex flex-column justify-content-center align-items-center text-center p-4">
-                <h5 className="card-title font-weight-bold text-uppercase mb-3" style={{ fontWeight: '800' }}>
-                  Wild Ways Tour - Kodaikanal
-                </h5>
-                <ul className="list-unstyled text-start">
-                <li>➤  La Saleth Church</li>
-                  <li>➤  Silent Valley View</li>
-                  <li>➤ Caps Fly Valley</li>
-                  <li>➤ Fire Watching Tower</li>
-                  <li>➤  Berijam Lake View</li>
-                  <li>➤ Memory Loss Forest View</li>
-                  <li>➤  Berijam Lake</li>
-                  <li>➤  Bryant Park</li>
-                  <li>➤  Kodaikanal Lake</li>
-                  
-                </ul>
-            
-              </div>
-            </div>
-          </div>
-
-          {/* Valley Tour - Kodaikanal Card */}
-          <div className="col d-flex" data-aos="zoom-in">
-            <div className="card h-100 course-card adventure-bg shadow-lg">
-              <div className="card-body d-flex flex-column justify-content-center align-items-center text-center p-4">
-                <h5 className="card-title font-weight-bold text-uppercase mb-3" style={{ fontWeight: '800' }}>
-                  Valley Tour - Kodaikanal
-                </h5>
-                <ul className="list-unstyled text-start">
-                  <li>➤ Coakers Walk</li>
-                  <li>➤  La Saleth Church</li>
-                  <li>➤  Liril Falls</li>
-                  <li>➤  Sai Baba Temple</li>
-                  <li>➤  Kulandhai Velappar Temple</li>
-                  <li>➤  Sheep & Rabbit Farm</li>
-                  <li>➤  Mannavanur Lake View</li>
-                  <li>➤  Mannavanur Lake</li>
-                  <li>➤  Upper Lake View</li>
-                  <li>➤  Bryant Park</li>
-                  <li>➤  Kodaikanal Lake</li>
-                </ul>
-          
-              </div>
-            </div>
-          </div>
-
+          {/* Right Navigation Button */}
+          <button
+            className="carousel-control-next custom-nav"
+            type="button"
+            data-bs-target="#courseCarousel"
+            data-bs-slide="next"
+          >
+            <span className="carousel-control-next-icon"></span>
+          </button>
         </div>
       </div>
     </div>
   );
 }
+
+// Styles
+const cardStyle = {
+  width: "40%",
+  minHeight: "260px",
+  backgroundColor: "#ffdf19",
+  border: "2px solid red",
+  transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+};
+
+const listItemStyle = {
+  display: "flex",
+  alignItems: "center",
+  transition: "transform 0.2s ease-in-out",
+};
+
+const arrowStyle = {
+  color: "red",
+  fontWeight: "bold",
+  marginRight: "5px",
+};
+
+/* Navigation Button Styles */
+const navButtonStyle = `
+  .custom-nav .carousel-control-prev-icon,
+  .custom-nav .carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+  }
+`;
+
+// Injecting styles dynamically
+const styleSheet = document.createElement("style");
+styleSheet.type = "text/css";
+styleSheet.innerText = navButtonStyle;
+document.head.appendChild(styleSheet);
