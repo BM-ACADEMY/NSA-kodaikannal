@@ -185,7 +185,7 @@ export default function CourseCards() {
 const cardStyle = {
   width: "40%",
   minHeight: "260px",
-  backgroundColor: "#ffdf19",
+  backgroundColor: "white",
   border: "2px solid red",
   transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
 };
