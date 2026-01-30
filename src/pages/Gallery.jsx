@@ -2,21 +2,21 @@ import React, { useState } from "react";
 import "../assets/css/style.css";
 
 // Import images from src/assets/
-import i1 from "../assets/1.jpeg";
-import i2 from "../assets/2.jpeg";
-import i3 from "../assets/3.jpeg";
-import i4 from "../assets/4.jpeg";
-import i5 from "../assets/5.jpeg";
-import i6 from "../assets/6.jpeg";
-import i7 from "../assets/7.jpeg";
-import i8 from "../assets/8.jpeg";
-import i9 from "../assets/9.jpeg";
-import i10 from "../assets/10.jpeg";
-import i11 from "../assets/11.jpeg";
-import i12 from "../assets/12.jpeg";
-import i13 from "../assets/13.jpeg";
-import i14 from "../assets/14.jpeg";
-import i15 from "../assets/15.jpeg";
+import i1 from "../assets/i1.jpeg";
+import i2 from "../assets/i2.jpeg";
+import i3 from "../assets/i3.png";
+import i4 from "../assets/i4.jpeg";
+import i5 from "../assets/i5.jpeg";
+import i6 from "../assets/i6.jpeg";
+import i7 from "../assets/i7.jpeg";
+import i8 from "../assets/i8.jpeg";
+import i9 from "../assets/i9.jpeg";
+import i10 from "../assets/i10.jpeg";
+import i11 from "../assets/i11.jpeg";
+import i12 from "../assets/i12.jpeg";
+import i13 from "../assets/i13.jpeg";
+import i14 from "../assets/i14.jpeg";
+import i15 from "../assets/i1.jpeg";
 import t1 from "../assets/t1.jpeg";
 import t2 from "../assets/t2.jpeg";
 import t3 from "../assets/t3.jpeg";
@@ -39,7 +39,7 @@ export default function ServiceTabs() {
     <div className="container-fluid" id="Gallery">
       <div className="row justify-content-center pt-4">
         <ul className="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
-          {[ 
+          {[
             { id: "design-tab", target: "design-tab-pane", label: "Our Villas" },
             { id: "marketing-tab", target: "marketing-tab-pane", label: "Tent Stay A Frame" },
             { id: "finance-tab", target: "finance-tab-pane", label: "Home Stay" },
@@ -70,7 +70,7 @@ export default function ServiceTabs() {
           {
             id: "design-tab-pane",
             content: "Our Villas",
-            images: ["i1", "i2", "i3", "i4", "i5", "i6", "i7", "i8", "i9", "i10", "i11", "i12", "i13", "i14", "i15", "t1", "t2", "t3", "t4", "t5"],
+            images: ["i1", "i2", "i3", "i4", "i5", "i6", "i7", "i8", "i9", "i10", "i11", "i12", "i13", "i14", "i15"],
           },
           {
             id: "marketing-tab-pane",
